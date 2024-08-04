@@ -6,8 +6,8 @@ use PHPUnit\Framework\TestCase;
 class BaseTestCase extends TestCase{
 
 	#[TEST]
-	function testWelcome(){
+	function Welcome(){
 
-		$this->assertTrue(True);
+		#$this->assertTrue(True);
 	}
 }

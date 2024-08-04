@@ -3,7 +3,7 @@
 namespace IbrahimMH\LeetCode\Solution\StringProblem;
 
 
-
+# Easy
 class LongestCommonPrefix{
 
 
@@ -19,7 +19,7 @@ class LongestCommonPrefix{
 
 		foreach($list as $word){
 			for ($i=0; $i <= strlen($prefix) - 1; $i++) { 
-					if ($word[i] != $prefix[$i]) {
+					if ($word[$i] != $prefix[$i]) {
 						$prefix = substr($word,0, $i);
 					}
 			}

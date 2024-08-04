@@ -1,7 +1,6 @@
 <?php
 
 
-
 namespace IbrahimMH\LeetCode\Tests;
 
 
@@ -13,13 +12,17 @@ class LongestCommonPrefixTestCase extends BaseTestCase{
 
 
 	#[TEST]
-	public function textLongestCommonPrefix(){
+	public function testLongestCommonPrefix(){
 
 		$reslove = new LongestCommonPrefix();
-		# ["flower", "flow", "flight"],["dog","racecar","car"]
+		# test Data#
+		/**
+		 * CASE 1# ["flower", "flow", "flight"],
+		 * CASE 2# ["dog","racecar","car"]
+		 * CASE 3# ["ibro",'ibrahim','ibrahm']
+		 */
 		$solution = $reslove->getLongestCommonPrefix(["dog","racecar","car"]);
-		echo "Ssssss";
-		#$this->assertEquals('fl',$solution);
+		$this->assertEquals('',$solution);
 	}
 
 
