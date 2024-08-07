@@ -2,7 +2,7 @@
 
 namespace IbrahimMH\LeetCode\Solution\ArrayProblem;
 
-
+# Easy
 class MaxNumberInInstedArray{
 
 

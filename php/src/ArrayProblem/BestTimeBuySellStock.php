@@ -4,7 +4,7 @@
 
 namespace IbrahimMH\LeetCode\Solution\ArrayProblem;
 
-
+# Easy
 class BestTimeBuySellStock{
 
 
