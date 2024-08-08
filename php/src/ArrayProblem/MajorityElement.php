@@ -9,13 +9,14 @@ class MajorityElement{
 	public function getMajorityElement(array $list){
 
 		$candidate = null;
-		$counter = 0;
+		$balance = 0;
 
 		foreach($list as $number){
-			if ($counter == 0) {
+			if ($balance == 0) {
 				$candidate = $number;
 			}
-			$counter += $candidate == $number? 1 : -1;
+			
+			$balance += $candidate == $number? 1 : -1;
 		}
 		return $candidate;
 	}
