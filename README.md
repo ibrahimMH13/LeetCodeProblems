@@ -75,11 +75,18 @@ To run the solutions and tests, ensure you have the following installed on your 
 
 ### Running the Solutions
 
-To run a solution, navigate to the appropriate directory and execute the solution file. For example, to run a PHP solution:
+To run a solution, navigate to the appropriate directory and execute the solution file. For example, 
 
+- ### php
+in side php dir ,run a PHP solution:
 ````
 ./vendor/bin/phpunit test/ReverseStringTest.php
 
+````
+- ### js
+in side js dir ,run a JS solution:
+````
+npm test
 ````
 
 ## Contributing
