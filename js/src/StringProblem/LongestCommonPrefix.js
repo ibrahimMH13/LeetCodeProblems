@@ -17,6 +17,6 @@ export function LongestCommonPrefix(list){
 			if (prefix =='') return '';
 		}
 	}
-	
+
 	return prefix;
 }
