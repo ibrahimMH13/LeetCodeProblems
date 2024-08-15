@@ -90,7 +90,7 @@ npm test
 ````
 
 - ### Python
-in side js dir ,run a python solution:
+in side python dir ,run a python solution:
 ````
 pytest test/
 ````
