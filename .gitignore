@@ -10,6 +10,7 @@ __pycache__/
 # Virtual environment
 venv/
 scriptenv/
+python/scriptenv/
 
 # Distribution / packaging
 .Python
@@ -53,3 +54,4 @@ coverage.xml
 
 # Mac OS X files
 .DS_Store
+/python/scriptenv/
