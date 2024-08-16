@@ -11,7 +11,7 @@ class MoveZeros{
 		   $noneZeroIndex = 0;
 
 		   for ($i=0; $i < count($list); $i++) { 
-		   		if ($list[$i] != 0) {$temp =
+		   		if ($list[$i] != 0) {
 		   			$temp = $list[$noneZeroIndex]; 
 		   			$list[$noneZeroIndex] = $list[$i];
 		   			$list[$i] = $temp;

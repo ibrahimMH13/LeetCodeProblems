@@ -42,6 +42,74 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+# Compiled Object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.mod
+
+# Coverage data
+*.gcda
+*.gcno
+*.gcov
+
+# Dependency or Exclusion files
+.deps/
+*.d
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Qt
+*.moc
+*.qrc
+*.ui
+
+# IDE directories
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.users
+*.ncb
+*.psess
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+# Backup files
+*~
+\#*\#
+.\#*
+
 
 # PyCharm
 .idea/
