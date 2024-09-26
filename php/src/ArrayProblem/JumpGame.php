@@ -5,25 +5,20 @@ namespace IbrahimMH\LeetCode\Solution\ArrayProblem;
 class JumpGame{
 
 
-	public function can($list){
+    function can($nums) {
+        $step = 0;
+        $length = count($nums) - 1;
+        for($i=0;$i < count($nums); $i++){
+            if($i > $step){
+                return false;
+            }
 
-		$steps = 0;
-		$length = count($list) - 1;
+            $step = max($step,$i + $nums[$i]);
 
-		for ($i=0; $i <= $length; $i++) { 
-			
-			if ($i > $steps) {
-
-				return false;
-			}
-
-			$steps = max($steps, ($i + $list[$i]));
-
-			if ($steps >= $length) {
-				return true;
-			}
-		}
-		return false;
-	}
+            if($step >= $length){
+                return true;
+            }
+        }
+    }
 
 }
