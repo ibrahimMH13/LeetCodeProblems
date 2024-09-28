@@ -21,4 +21,29 @@ class JumpGame{
         }
     }
 
+    function getMinSteps($list){
+
+        $steps = 0;
+        $maxJump = 0;
+        $currentJumpEnd = 0;
+        $length = count($list);
+       
+       if($length <= 1) return 0;
+
+       for ($i=0; $i < $length; $i++) { 
+         
+            $maxJump = max($maxJump,($i + $list[$i]));
+
+            if ($i == $currentJumpEnd) {
+                $steps++;
+                $currentJumpEnd = $maxJump;
+            }
+
+            if($currentJumpEnd >= $length -1){
+                return $steps;
+            }
+
+       }
+    }
+
 }

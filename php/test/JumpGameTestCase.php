@@ -12,4 +12,13 @@ class JumpGameTestCase extends BaseTestCase{
 		$this->assertEquals(true,$solution);
 	}
 
+	#[TEST]
+	public function testMinJump(){
+
+		$reslove = new JumpGame();
+
+		$solution = $reslove->getMinSteps([2,1]);
+
+		$this->assertEquals(1,$solution);
+	}
 }
