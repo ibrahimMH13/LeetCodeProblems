@@ -35,7 +35,7 @@ class RandomizedSet
 
 		$dIndex = $this->map[$value];
 
-		$lastEle = array_pop($this->list);
+		$lastEle = end($this->list);
 
 		$this->map[$lastEle] = $dIndex;
 
