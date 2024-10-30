@@ -123,3 +123,9 @@ Makefile
 # Mac OS X files
 .DS_Store
 /python/scriptenv/
+*.out
+*.exe
+*.o
+*.a
+*.so
+
