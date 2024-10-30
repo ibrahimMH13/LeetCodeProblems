@@ -109,11 +109,7 @@ Makefile
 *~
 \#*\#
 .\#*
-
-# Ignore all executables without an extension
-*
-!*.cpp
-
+y-or-n
 # PyCharm
 .idea/ßß
 
