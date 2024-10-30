@@ -21,4 +21,26 @@ class BestTimeBuySellStock{
 		   }
 		   return $profit;
 	}
+
+
+	public function getMaxProfitV2(array $prices){
+
+		$profit = 0;
+		$minPrice = PHP_INT_MAX;
+
+		for($i=0;$i < count($prices);$i++){
+
+			if($prices[$i] < $minPrice){
+
+				$minPrice = $prices[$i];
+			
+			}else(($prices[$i] - $minPrice) > $profit){
+				
+				$profit = $prices[i] - $minPrice; 
+			}
+		}
+
+		return $profit;
+	}
+
 }
