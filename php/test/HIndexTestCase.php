@@ -17,4 +17,14 @@ class HIndexTestCase extends BaseTestCase{
 		$this->assertEquals($solution,3);
 	}
 
+	#[TEST]
+	public function testHIndexV2(){
+
+		$reslove = new HIndex();
+		
+		$solution = $reslove->getHIndexV2([3,0,6,1,5]);
+
+		$this->assertEquals(3, $solution);
+	}
+
 }
