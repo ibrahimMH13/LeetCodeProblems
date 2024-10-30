@@ -19,4 +19,18 @@ class CandyTestCase extends BaseTestCase{
 		$this->assertEquals(5, $solution);
 
 	}
+
+		# [TEST]
+	public function testGetMinCandyV2(){
+
+
+		$reslove = new Candy();
+
+		$solution = $reslove->getMinCandyV2([1,0,2]);
+
+
+		$this->assertEquals(5, $solution);
+
+	}
+
 }
