@@ -112,9 +112,10 @@ Makefile
 
 # Ignore all executables without an extension
 *
+!*.cpp
 
 # PyCharm
-.idea/
+.idea/ßß
 
 # Jupyter Notebook
 .ipynb_checkpoints/
