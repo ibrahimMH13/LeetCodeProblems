@@ -21,4 +21,14 @@ class BestTimeBuySellStockTestCase extends BaseTestCase{
 		$solution = $reslove->getMaxProfit([7,1,5,3,6,4]);
 		$this->assertEquals(5, $solution);
 	}
+
+
+	#[TEST]
+	public function testBestTimeBuySellStockV2(){
+
+		$reslove = new BestTimeBuySellStock();
+		$solution = $reslove->getMaxProfitV2([7,1,5,3,6,4]);
+		$this->assertEquals(5, $solution);
+	}
+
 }

@@ -23,6 +23,7 @@ class BestTimeBuySellStock{
 	}
 
 
+
 	public function getMaxProfitV2(array $prices){
 
 		$profit = 0;
@@ -34,9 +35,9 @@ class BestTimeBuySellStock{
 
 				$minPrice = $prices[$i];
 			
-			}else(($prices[$i] - $minPrice) > $profit){
-				
-				$profit = $prices[i] - $minPrice; 
+			}elseif(($prices[$i] - $minPrice) > $profit){
+
+				$profit = $prices[$i] - $minPrice; 
 			}
 		}
 
