@@ -21,6 +21,21 @@ class JumpGame{
         }
     }
 
+
+    public function canV2($list){
+
+        $steps = 0;
+
+        for ($i=0; $i < count($list); $i++) { 
+            
+            if($i > $step) return false;
+            
+            $steps = max($i, $i + $list[$i]);
+
+            if ($steps > count($length -1)) return true;
+        }
+    }
+
     function getMinSteps($list){
 
         $steps = 0;
@@ -44,6 +59,29 @@ class JumpGame{
             }
 
        }
+    }
+
+
+    public function getMinStepsV2(array $list)
+    {
+        $steps = 0;
+        $maxJump = 0;
+        $currentJumpEnd = 0;
+        $length = count($list);
+
+        if ($length <=1) return 0;
+
+        for ($i=0; $i < $length; $i++) { 
+            
+            $maxJump = max($maxJump,$i + $list[$i]);
+
+            if ($i === $currentJumpEnd) {
+              $steps++;
+              $currentJumpEnd =$maxJump;
+            }
+
+            if ($steps >= $length -1) return $steps;
+        }
     }
 
 }
