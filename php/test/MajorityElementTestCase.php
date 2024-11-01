@@ -21,4 +21,19 @@ class MajorityElementTestCase extends BaseTestCase{
 		$solution = $reslove->getMajorityElement([3,2,3]);
 		$this->assertEquals(3,$solution);
 	}
+
+
+		# test Data
+	/**
+	* CASE 1#[3,2,3], output should be 3
+	*/
+
+	#[TEST]
+	public function getMajorityElementV2(){
+
+		$reslove = new MajorityElement();
+		$solution = $reslove->getMajorityElement([3,2,3]);
+		$this->assertEquals(3,$solution);
+	}
+
 }

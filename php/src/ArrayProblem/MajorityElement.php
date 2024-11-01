@@ -20,4 +20,22 @@ class MajorityElement{
 		}
 		return $candidate;
 	}
+
+
+	public function getMajorityElementV2(array $list){
+
+		$candidate = null;
+		$balance = 0;
+
+		for ($i=0; $i < count($list); $i++) { 
+			
+			if ($balance <= 0) {
+				$candidate = $list[$i];
+				$balance = 0;
+			}
+			$balance += $candidate == $list[$i]? 1 : -1;
+		}
+
+		return $candidate;
+	}
 }
