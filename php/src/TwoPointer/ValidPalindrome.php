@@ -16,10 +16,10 @@ class ValidPalindrome
 		$right = strlen($str) -1;
 
 		while ($left < $right) {
-			while ($left < $right && !preg_match('/az/i', $str[$left])) {
+			while ($left < $right && !preg_match('/[a-z]/i', $str[$left])) {
 				$left++;
 			}
-			while($left < $right && !preg_match('/az/i', $str[$right])) {
+			while($left < $right && !preg_match('/a-z/i', $str[$right])) {
 				$right--;
 			}
 
