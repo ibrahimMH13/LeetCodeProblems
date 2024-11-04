@@ -128,3 +128,5 @@ y-or-n
 *.a
 *.so
 !*.cpp
+
+__pycache__
