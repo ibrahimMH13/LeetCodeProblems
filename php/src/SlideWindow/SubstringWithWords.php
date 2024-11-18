@@ -13,8 +13,6 @@ class SubstringWithWords {
 
       $wordLength = strlen($words[0]);
 
-      $totalWordLength = $wordLength * count($words);
-
       $mapFreq = [];
 
       $result = [];
@@ -58,9 +56,10 @@ class SubstringWithWords {
                }     
 
                 $count++;
+
                 while($seen[$word] > $mapFreq[$word]){
-                    $word = substr($s,$start, $wordLength);
-                    $seen[$word]--;
+                    $leftWord = substr($s,$start, $wordLength);
+                    $seen[$leftWord]--;
                     $count--;
                     $start += $wordLength;
                 }
