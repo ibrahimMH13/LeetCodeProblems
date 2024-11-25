@@ -23,8 +23,8 @@ class Sudoku{
                 $boxIndex = ($i%3) * 3 + ($j%3);
 
                 # checker
-                if(in_array($cell,$rows) ||
-                   in_array($cell,$columns) || 
+                if(in_array($cell,$rows[$i]) ||
+                   in_array($cell,$columns[$j]) || 
                    in_array($cell,$suboxs[$boxIndex]))
                    {
                     return false;
