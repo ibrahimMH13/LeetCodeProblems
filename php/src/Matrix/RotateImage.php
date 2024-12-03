@@ -6,7 +6,7 @@ namespace IbrahimMH\LeetCode\Solution\Matrix;
 class RotateImage{
 
 
-    public function rotate(array $matrix){
+    public function rotate(&$matrix){
 
         $length = count($matrix);
         for($i=0; $i < $length; $i++){
@@ -21,6 +21,5 @@ class RotateImage{
             $matrix[$i] = array_reverse($matrix[$i]);
         }
 
-        return $matrix;
     }
 }
